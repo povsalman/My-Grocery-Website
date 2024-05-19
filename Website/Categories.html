@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+
+body {
+    background-size: cover;
+    background-color: #7FB3D5;
+    animation-name: gradient;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+</style>
+
+<meta charset=""="UTF-8">   <!--Type of character encoding (UTF-8 is the only valid encoding for HTML5 documents.)-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--  metadata name viewport: gives hints about the size of the initial size of the viewport. -->
+<title>Categories</title>
+
+<link rel="apple-touch-icon" sizes="180x180"
+href="favicon_io (1)\apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32"
+href="favicon_io (1)\favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16"
+href="favicon_io (1)\favicon-16x16.png">
+<link rel="manifest" href="favicon_io (1)\site.webmanifest">    <!--uploads the favicon, image that appears along with the website -->
+
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<!-- custom css file link  -->
+<link rel="stylesheet" href="Categories.css">   <!--rel: This attribute names a relationship of the linked document to the current document.-->
+
+
+</head>
+
+<!-- header section starts  -->
+
+<header>
+
+    <title> navigation bar </title>
+    <body>
+
+        <nav>                                               <!--The <nav> tag defines a set of navigation links.-->
+             <div class="pageName">                         <!--The <div> tag is used as a container for HTML elements - which is then styled with CSS. Any sort of content can be put inside the <div> tag-->
+               <a href = "main.html"><p>mcubix</p></a>
+            </div>
+            <ul>                                            <!--The <ul> tag defines an unordered (bulleted) list.-->
+                <li><a href = "main.html">Home</a></li>
+                <li><a href = "Categories.html">Categories</a></li>
+                <li><a href = "cart.html">Cart</a></li>
+                <li><a href = "TopSeller.html">Top Sellers</a></li>
+                <li><a href = "Login Page.html">Login</a></li>
+            </ul>
+
+        </nav>
+      </body>
+</header>
+
+
+<!-- header section ends -->
+
+<!-- category section starts  -->
+<body>
+<section class="home">                     <!-- The <section> tag defines a section in a document.-->
+
+  <div class="content">
+
+    <h3>GET EVERYTHING AT ONE PLACE!</h3>
+    <a href="Categories.html" class="btn">Lets Shop!</a>
+  </div>
+
+  <div class="image">
+    <img src="images/mcubix-high-resolution-logo-color-on-transparent-background (1).png"  width="450" height="600">
+  </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner-container">
+
+<div class="banner">
+    <img src="images/home-bg.jpg" >
+    <div class="content">
+        <h3>Everything At Your<br>Fingertips!</h3>
+    </div>
+</div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- Menu section starts  -->
+
+<h1 class="heading"> Categories</h1>
+
+<section class="categories">
+
+<div class="row">
+    <div class="categories-col">
+        <img src="images/vegetables.jpeg" height="500" width="169" >
+        <div class="layer">
+            <a href = "#Vegetables"><h3>Vegetables</h3></a>
+        </div>
+    </div>
+    <div class="categories-col">
+        <img src="images/dairy.jpeg" height="500" width="169">
+        <div class="layer">
+            <a href = "#Dairy"><h3>Dairy Products</h3></a>
+        </div>
+    </div>
+    <div class="categories-col">
+        <img src="images/meat.jpeg" height="500" width="169">
+        <div class="layer">
+            <a href = "#Meat"><h3>Meat</h3></a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="categories-col">
+        <img src="images/fruits (2).jpeg" height="500" width="169" >
+        <div class="layer">
+            <a href = "#Fruits"><h3>Fruits</h3></a>
+        </div>
+    </div>
+    <div class="categories-col">
+        <img src="images/processed.jpeg" height="500" width="169">
+        <div class="layer">
+            <a href = "#Processed"><h3>Processed Items</h3></a>
+        </div>
+    </div>
+    <div class="categories-col">
+        <img src="images/beverages.jpeg" height="500" width="169">
+        <div class="layer">
+            <a href = "#Beverages"><h3>Beverages</h3></a>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!-- Menu section ends  -->
+
+<!-- product section starts  -->
+
+<h3 class="heading" id="Vegetables">Vegetables</h3>
+
+<section class="product">
+
+<div class="box-container">
+
+    <div class="box">
+        <span class="discount">-10%</span>        <!-- The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element. -->
+        <img src="images/product-2.png" >
+        <h3>tomatos</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 200 <span> RS. 320 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <span class="discount">-5%</span>
+
+        <img src="images/cauliflower.png" >
+        <h3>cauliflower</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 250 </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+
+    <div class="box">
+        <span class="discount">-5%</span>
+        <img src="images/broccoli.png" >
+        <h3>broccoli</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 135 <span> RS. 170 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+    </div>
+
+
+</section>
+
+<!--Vegetables end------>
+
+<h3 class="heading" id="Dairy">Dairy Products</h3>
+
+<section class="product">
+
+<div class="box-container">
+
+
+    <div class="box">
+        <img src="images/product-8.png" >
+        <h3>Butter</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 300 </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <img src="images/product-4.png" >
+        <h3>Milk</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 270 </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+
+    <div class="box">
+        <img src="images/youghurt.png" >
+        <h3>Youghurt</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 230 <span> RS. 250 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+</div>
+</section>
+
+<h3 class="heading" id="Meat">Meat</h3>
+
+<section class="product">
+
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="images/chicken.png" >
+        <h3>chicken</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 495 <span> RS. 550 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <img src="images/oily fishes.png" >
+        <h3>mackerel</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 650 <span> RS. 850 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+
+    <div class="box">
+        <img src="images/salmon fish.png" >
+        <h3>salmon</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 680 <span> RS. 950 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+    </div>
+
+</section>
+
+<!--meat end------>
+
+<h3 class="heading" id="Fruits">Fruits</h3>
+
+<section class="product">
+
+<div class="box-container">
+
+    <div class="box">
+        <span class="discount">-10%</span>
+        <img src="images/banana.png" >
+        <h3>banana</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 180 <span>RS. 200</span></div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <span class="discount">-5%</span>
+
+        <img src="images/apple.png" >
+        <h3>apple</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 240 <span> RS. 300 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+
+    <div class="box">
+        <img src="images/blue grapes.png" >
+        <h3>blue grapes</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 265 <span> RS. 290 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+    </div>
+
+</section>
+
+
+<!--fruits end------>
+
+<h3 class="heading" id="Processed">Processed Items</h3>
+
+<section class="product">
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="images/product-8.png" >
+        <h3>Butter</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 300 </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <img src="images/cheetos.png" >
+        <h3>cheetos</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 265 <span> RS. 350 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+
+    <div class="box">
+        <img src="images/Pringles.png" >
+        <h3>Pringles</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 900 <span> RS. 1100 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+    </div>
+
+</section>
+
+
+<!--processed items end------>
+
+<h3 class="heading" id="Beverages">Beverages</h3>
+
+<section class="product">
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="images/red bull.png" >
+        <h3>Red Bull</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 450 <span> RS. 550 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+        <img src="images/pepsi.png" >
+        <h3>Pepsi</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 120 <span> RS. 220 </span> </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+
+    <div class="box">
+        <img src="images/fanta.png" >
+        <h3>fanta</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price"> RS. 120  </div>
+        <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1">
+            <span> /kg </span>
+        </div>
+        <a href="cart.html" class="btn">add to cart</a>
+    </div>
+
+    </div>
+
+</section>
+
+<!-- product section ends -->
+
+
+<!-- footer section starts  -->
+
+<div class="footer">
+        <p style="text-align: center;">&copy;-MCUBIX Store. All rights reserved.</p>
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+</body>
+</html>

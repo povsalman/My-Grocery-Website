@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navbar{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    margin-left: 60px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 17px;
+}
+
+.contain_vid{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    padding:0;
+    margin:0;
+    left: 0px;
+    top: 0px;
+    z-index:  -1;
+    overflow: hidden;
+
+}
+
+.backvideo{
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+.mainlogo{
+    position: relative;
+    top: 100px;
+
+}
+
+.mainlogo c{
+    position: relative;
+    
+
+}
+
+.mainlogo a{
+    position: relative;
+    top: 50px;
+    left:0px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: #7fb3d5;
+}
+
+/*Hover Animation*/
+.mainlogo b:hover,.navbar a:hover
+{
+    background-color:rgba(35, 213, 213, 0.734);
+    transition: 1s;
+}
+/*Footer Css*/
+.footer{
+    padding:50px;
+    max-height: 10px;
+    margin:auto;
+    background-color:  rgba(123, 198, 255, 0.6);
+}

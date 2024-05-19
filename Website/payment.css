@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --primary: hsla(168, 55%, 77%, 0.65);   /*  colors for gradient overlay*/
+    --secondary: hsla(204, 51%, 67%, 0.65);
+
+
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing:border-box ;
+}
+
+nav{
+    width: 1440px;
+    font-size: 24px;         /*nav bar and its color */
+    height:60px;
+    line-height: 20px;
+    padding: 10px 100px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#7FB3D5,#A3E4D7);
+}
+
+nav .pageName p{            /* Nav bar mcubix shows */
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight:bold;
+    padding: 10px;
+    float: left;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor:pointer;
+}
+
+nav ul{
+    float: right;
+}
+ nav li{
+    display: inline-block;
+    line-height: 40px;
+    list-style: none;
+ }
+nav li a{
+
+    font-size: 16px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding:  30px;
+    color:#000;
+    text-decoration: none;  /* removing underlines from home, topeseller etc in nav bar */
+}
+nav li a:hover{     /* navigation bar contents turn aqua when cursor points */
+    color:aqua;
+}
+
+
+*{
+
+    font-family:'Poppins', sans-serif;  /* setting up the font of main box */
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-transform:capitalize;
+    transition: all.2s linear;
+}
+
+
+
+.maindiv    /*gradient overlay */
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary), var(--secondary)),
+        url('./img/payment.jpg') no-repeat center center / cover;
+    padding-bottom: 70px;
+    padding-top: 70px;
+
+}
+
+.maindiv form
+{
+    padding:20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,.1);
+}
+
+.maindiv form .row
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.maindiv form .row .column .mainHeading /* billing information color black and transformed to uppercase */
+{
+    font-size: 18px;
+    color: rgb(11, 10, 10);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.maindiv form .row .column .textBox
+{
+    margin: 3px 0;
+}
+
+.maindiv form .row .column .textBox span
+{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.maindiv form .row .column .textBox input    /* inner text box text remains the same as in html */
+{
+    width: 90%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.maindiv form .row .column .textBox input:focus
+{
+    border:1px solid #000;                  /* sets border to black color*/
+}
+
+.maindiv form .row .column .flex
+{
+    display: flex;
+    gap: 10px;
+}
+
+.maindiv form .row .column
+{
+    flex:1 1 250px;         /* billing information and payment method sectioned side by side */
+}
+
+.maindiv form .row .column .innerRow .textBox
+{
+    margin-top: 5px;
+}
+.maindiv form .row .column .textBox img
+{
+    height: 34px;
+    margin-top:5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+ .maindiv form .finalButton         /* checkout button */
+ {
+    width: 97%;
+    padding: 12px;
+    font-size: 17px;
+    background: #A3E4D7;
+    margin-top: 10px;
+    cursor: pointer;
+ }
+.maindiv form .finalButton:hover /* color changes when hovered on proceed to checkout */
+{
+    background: #7FB3D5;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #eee;
+    color: #000;
+    text-align: center;
+  }

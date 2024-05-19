@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --primary: hsla(168, 55%, 77%, 0.65);   /*  colors for gradient overlay*/
+    --secondary: hsla(204, 51%, 67%, 0.65);
+
+
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing:border-box ;
+}
+
+nav{
+    width: 1440px;
+    font-size: 24px;         /*nav bar and its color */
+    height:60px;
+    line-height: 20px;
+    padding: 10px 100px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#7FB3D5,#A3E4D7);
+}
+
+nav .pageName p{            /* Nav bar mcubix shows */
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight:bold;
+    padding: 10px;
+    float: left;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor:pointer;
+}
+
+nav ul{
+    float: right;
+}
+ nav li{
+    display: inline-block;
+    line-height: 40px;
+    list-style: none;
+ }
+nav li a{
+
+    font-size: 16px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding:  30px;
+    color:#000;
+    text-decoration: none;  /* removing underlines from home, topeseller etc in nav bar */
+}
+nav li a:hover{     /* navigation bar contents turn aqua when cursor points */
+    color:aqua;
+}
+
+
+
+
+
+
+h1{
+  position:relative;            /* top seller heading*/
+  font-family: sans-serif;
+  font-size: 55px;
+  font-weight: BOLD;
+  height: 500px;
+
+}
+body{                   /* gradient overlay */
+
+    height: 100vh;
+    width: 100 vw;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    background: linear-gradient(135deg, var(--primary), var(--secondary)),
+        url('./img/shop2.jpg') no-repeat center center / cover;
+    padding-bottom: 70px;
+
+  }
+  .show{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+  }
+  .mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .bottomBar{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{                       /*bars at the bottom of the slides*/
+    width: 50px;
+    height: 8px;
+    border: 2px solid #A3E4D7;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #75B3D5;
+  }
+
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+
+.middle{                /* position of the image*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* translating the box to the center*/
+}
+
+.bottomBar{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+
+/*Footer Css*/
+
+.footer {
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 13px;
+    background-color: #eee;
+    color: #000;
+    text-align: center;
+}
